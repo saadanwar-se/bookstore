@@ -13,7 +13,7 @@ This project is a Django-based web application for managing a bookstore. It incl
 - [Running the Application](#running-the-application)
 
 ## Project Structure
-
+Use seperate .env files for running app with docker and without docker
 
 ## Requirements
 
@@ -46,11 +46,15 @@ Using Docker
 5. **Build the image:**
 sudo docker-compose build
 
-6. **Apply migrations:**
-sudo docker-compose exec app python manage.py migrate
-
-7. **Command to start your Docker service:
+6. **Command to start your Docker service:
 sudo docker-compose up -d
+ 
+7. **Start Interactive Shell:**
+sudo docker exec -it {name of container} sh
+
+8. **Apply migrations:**
+python manage.py migrate
+
 
 8. **Command to down your Docker service:
 sudo docker-compose down

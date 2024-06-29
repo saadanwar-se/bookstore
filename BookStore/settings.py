@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-@6y+jqci03note_wn$efx@bo+t+^n80q=j4r!b&4-2*hs^h6ia
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -92,16 +92,6 @@ WSGI_APPLICATION = 'BookStore.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'bookstore',
-#         'USER': 'postgres',
-#         'PASSWORD': 'password',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
 # Database configuration
 DATABASES = {
     'default': {
