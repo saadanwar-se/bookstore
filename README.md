@@ -46,14 +46,17 @@ Using Docker
 5. **Build the image:**
 sudo docker-compose build
 
-6. **Command to start your Docker service:
+6. **Apply migrations:**
+sudo docker-compose exec app python manage.py migrate
+
+7. **Command to start your Docker service:
 sudo docker-compose up -d
 
-7. **Command to down your Docker service:
+8. **Command to down your Docker service:
 sudo docker-compose down
 
 
 Running Tests
 
-8. **To run tests for the project:
+9. **To run tests for the project:
 python manage.py test
